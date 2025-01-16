@@ -1,0 +1,31 @@
+{
+    "name": "@jetpinpin/prettier-config",
+    "version": "1.0.0",
+    "description": "Pinpin's Prettier shared configuration",
+    "main": "dist/index.mjs",
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "bun run esbuild.config.ts",
+        "lint": "prettier --check .",
+        "format": "prettier --write ."
+    },
+    "prettier": "./dist/index.mjs",
+    "devDependencies": {
+        "@types/bun": "latest",
+        "esbuild": "^0.24.2"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0",
+        "prettier": "^3.4.0"
+    },
+    "dependencies": {
+        "prettier-plugin-css-order": "^2.1.2",
+        "prettier-plugin-organize-attributes": "^1.0.0",
+        "prettier-plugin-organize-imports": "^4.1.0"
+    }
+}
