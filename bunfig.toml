@@ -1,2 +1,0 @@
-[install.scopes]
-jetpinpin = { token = "$npm_token" }

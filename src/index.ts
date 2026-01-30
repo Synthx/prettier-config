@@ -1,6 +1,6 @@
 import type { Config } from 'prettier';
 
-const config: Config = {
+export default {
     printWidth: 120,
     semi: true,
     singleQuote: true,
@@ -20,6 +20,4 @@ const config: Config = {
         '$ANGULAR_STRUCTURAL_DIRECTIVE',
     ],
     attributeSort: 'ASC',
-};
-
-export default config;
+} satisfies Config;
